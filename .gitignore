@@ -1,0 +1,73 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.idea/
+.history
+
+# Editor directories and files
+.vscode/
+.idea/
+*.iml
+
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Generated docs
+**/doc/api/
+
+# iOS
+ios/Pods/
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+ios/Runner/GeneratedPluginRegistrant.*
+ios/Runner/GoogleService-Info.plist
+
+# Android
+local.properties
+android/.gradle/
+**/android/key.properties
+**/android/*.keystore
+android/app/google-services.json
+
+# Firebase / Google services
+google-services.json
+GoogleService-Info.plist
+
+# Build outputs
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Keystore and signing
+*.jks
+*.keystore
+key.properties
+
+# Secrets and env files (keep out of repo)
+.env
+.env.*
+secrets.json
+credentials.json
+
+# Misc OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# End of file
