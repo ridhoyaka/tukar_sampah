@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class AppConstants {
   AppConstants._();
 
@@ -26,12 +28,12 @@ class AppConstants {
     kaca: 'Botol kaca, pecahan kaca',
   };
 
-  // Icon kategori (Material Icons code points)
-  static const Map<String, int> kategoriIcons = {
-    plastik: 0xe5f5, // local_drink
-    kertas: 0xe873, // description
-    elektronik: 0xe1c1, // devices
-    logam: 0xe84e, // build
-    kaca: 0xe894, // local_bar
+  // Icon kategori (menggunakan IconData const)
+  static const Map<String, IconData> kategoriIcons = {
+    plastik: IconData(0xe5f5, fontFamily: 'MaterialIcons'), // local_drink
+    kertas: IconData(0xe873, fontFamily: 'MaterialIcons'), // description
+    elektronik: IconData(0xe1c1, fontFamily: 'MaterialIcons'), // devices
+    logam: IconData(0xe84e, fontFamily: 'MaterialIcons'), // build
+    kaca: IconData(0xe894, fontFamily: 'MaterialIcons'), // local_bar
   };
 }

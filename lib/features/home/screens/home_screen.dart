@@ -212,7 +212,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       itemCount: kategoriList.length,
       itemBuilder: (context, index) {
         final entry = kategoriList[index];
-        final iconCode = AppConstants.kategoriIcons[entry.key] ?? 0xe88a;
+        final iconData =
+            AppConstants.kategoriIcons[entry.key] ??
+            const IconData(0xe88a, fontFamily: 'MaterialIcons');
 
         return Container(
           decoration: BoxDecoration(
@@ -223,7 +225,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
-                IconData(iconCode, fontFamily: 'MaterialIcons'),
+                iconData,
                 size: 32,
                 color: Theme.of(context).colorScheme.primary,
               ),

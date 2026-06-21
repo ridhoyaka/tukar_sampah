@@ -83,7 +83,12 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
     } on TimeoutException catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(e.message), backgroundColor: Colors.red),
+          SnackBar(
+            content: Text(
+              e.message ?? 'Timeout. Periksa koneksi internet Anda.',
+            ),
+            backgroundColor: Colors.red,
+          ),
         );
       }
     } on AuthException catch (e) {
